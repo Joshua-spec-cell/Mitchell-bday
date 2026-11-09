@@ -6,7 +6,7 @@ const ORDER=[6,1,13,4,9,2,12,7,3,14,5,8,10];
 const SHUFFLE_EVERY_LOAD=false;
 /* Captions: edit freely */
 const CAPTIONS=["A moment worth keeping.","Quietly becoming.","A little warmth in a passing moment.","Simply, unmistakably her.","Some moments speak without words.","The art of being oneself.","A frame full of quiet magic.","Soft light, steady heart.","Peace, in a single frame.","Just as she is.","A quiet kind of glow.","Warmth, caught in a frame.","Calm looks good on her."];
-const MUSIC_MISSING="The song isn't here yet. Add your file at music/the-older-i-get.mp3 and refresh.";
+const MUSIC_MISSING="music/Alan Jackson - The Older I Get.mp3";
 const $=s=>document.querySelector(s),reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
 const shuffle=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
 const order=SHUFFLE_EVERY_LOAD?shuffle([...ORDER]):ORDER,caps=shuffle([...CAPTIONS]);
